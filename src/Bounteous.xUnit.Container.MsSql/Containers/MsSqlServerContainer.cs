@@ -8,12 +8,11 @@ using Xunit;
 
 namespace Bounteous.xUnit.Container.MsSql.Containers;
 
-public class MsSqlSeverContainer : IMsSqlContainer, IAsyncLifetime
+public class MsSqlServerContainer : IMsSqlContainer, IAsyncLifetime
 {
     public MsSqlContainer Server { get; private set; } = null!;
     public string ConnectionString { get; private set; } = null!;
-
-    public MsSqlSeverContainer() { }
+    public MsSqlServerContainer() { }
     
     public async Task InitializeAsync()
     {
