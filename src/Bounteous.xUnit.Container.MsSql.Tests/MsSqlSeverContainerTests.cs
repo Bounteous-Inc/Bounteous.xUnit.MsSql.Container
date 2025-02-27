@@ -6,7 +6,7 @@ using Xunit;
 
 namespace Bounteous.xUnit.Container.MsSql.Tests;
 
-[Collection("MsSqlSeverContainer")]
+[Collection("MsSqlContainer")]
 public class MsSqlSeverContainerTests : IClassFixture<MsSqlServerContainer>
 {
     private readonly MsSqlServerContainer container;
