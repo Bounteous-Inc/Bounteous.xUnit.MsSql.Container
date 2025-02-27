@@ -3,7 +3,7 @@ using Xunit;
 
 namespace Bounteous.xUnit.Container.MsSql;
 
-[CollectionDefinition("MsSqlSeverContainer")]
+[CollectionDefinition("MsSqlServerContainer")]
 public class MsSqlSeverContainerCollection : ICollectionFixture<MsSqlServerContainer>
 {
     // This class has no code, and is never created. Its purpose is simply
