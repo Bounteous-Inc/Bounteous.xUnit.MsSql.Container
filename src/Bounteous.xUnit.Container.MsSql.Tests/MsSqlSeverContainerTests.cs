@@ -7,11 +7,11 @@ using Xunit;
 namespace Bounteous.xUnit.Container.MsSql.Tests;
 
 [Collection("MsSqlSeverContainer")]
-public class MsSqlSeverContainerTests : IClassFixture<MsSqlSeverContainer>
+public class MsSqlSeverContainerTests : IClassFixture<MsSqlServerContainer>
 {
-    private readonly MsSqlSeverContainer container;
+    private readonly MsSqlServerContainer container;
 
-    public MsSqlSeverContainerTests(MsSqlSeverContainer container)
+    public MsSqlSeverContainerTests(MsSqlServerContainer container)
     {
         this.container = container;
     }
