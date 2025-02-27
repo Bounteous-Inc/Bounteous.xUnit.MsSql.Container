@@ -13,6 +13,8 @@ public class MsSqlSeverContainer : IMsSqlContainer, IAsyncLifetime
     public MsSqlContainer Server { get; private set; } = null!;
     public string ConnectionString { get; private set; } = null!;
 
+    public MsSqlSeverContainer() { }
+    
     public async Task InitializeAsync()
     {
         Server = new MsSqlBuilder()

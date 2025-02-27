@@ -1,18 +1,11 @@
-# Bounteous.xUnit.Container.MsSQL
+using System.Threading.Tasks;
+using Bounteous.xUnit.Container.MsSql.Containers;
+using Bounteous.xUnit.Container.MsSql.Extensions;
+using Dapper;
+using Xunit;
 
-This utility create a docker image of MsSql within your tests
+namespace Bounteous.xUnit.Container.MsSql.Tests;
 
-
-Usage:
-
-- Any xUnit test where you want to use a MsSql instancd must have the Collection as defined below:
-  ````
-  [Collection("MsSqlSeverContainer")]
-  ````
-
-Here is the Unit test for the MsSqlSererContainer as an example:
-
-```
 [Collection("MsSqlSeverContainer")]
 public class MsSqlSeverContainerTests : IClassFixture<MsSqlSeverContainer>
 {
@@ -54,4 +47,3 @@ public class MsSqlSeverContainerTests : IClassFixture<MsSqlSeverContainer>
         Assert.Equal(1, tableCount);
     }
 }
-```
