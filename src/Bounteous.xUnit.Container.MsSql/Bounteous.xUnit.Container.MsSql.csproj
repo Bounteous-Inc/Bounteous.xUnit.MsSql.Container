@@ -1,13 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <Version>0.0.1</Version>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Bounteous.Core" Version="0.0.3" />
-      <PackageReference Include="Bounteous.Data" Version="0.0.4" />
+      <PackageReference Include="Bounteous.Core" Version="0.0.23" />
+      <PackageReference Include="Bounteous.Data" Version="0.0.31" />
       <PackageReference Include="Bounteous.Data.SqlServer" Version="0.0.3" />
       <PackageReference Include="Bounteous.xUnit.Accelerator" Version="0.0.4" />
       <PackageReference Include="Moq" Version="4.20.72" />
