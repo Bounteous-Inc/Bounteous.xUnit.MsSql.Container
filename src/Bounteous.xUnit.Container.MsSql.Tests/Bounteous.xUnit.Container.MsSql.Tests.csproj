@@ -6,11 +6,11 @@
 
         <LangVersion>12</LangVersion>
 
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Bounteous.Core" Version="0.0.3" />
+        <PackageReference Include="Bounteous.Core" Version="0.0.23" />
         <PackageReference Include="Bounteous.xUnit.Accelerator" Version="0.0.4" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
         <PackageReference Include="Testcontainers.MsSql" Version="4.3.0" />
